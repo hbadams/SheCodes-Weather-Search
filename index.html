@@ -28,8 +28,24 @@
     <div class="container">
       <div class="weather-app-wrap">
         <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Enter a city"
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input type="submit" value="Go" class="btn btn-warning w-50" />
+              </div>
+            </div>
+          </form>
           <div class="overview">
-            <h1 id="city">Boston</h1>
+            <h1 id="city"></h1>
             <ul>
               <li>Last updated: <span id="date"></span></li>
               <li id="description">Clear</li>
@@ -37,16 +53,19 @@
           </div>
           <div class="row">
             <div class="col-6">
-              <div class="clearfix weather-temperature">
+              <div class="weather-temperature">
                 <img src="" alt="Weather icon" id="icon" class="float-left" />
-                <strong id="temperature"> 22</strong
-                ><span id="units">°C | °F</span>
+                <strong id="temperature"></strong
+                ><span id="units">
+                  <a href="#" id="celsius-link" class="active">°C</a> |
+                  <a href="#" id="fahrenheit-link">°F</a></span
+                >
               </div>
             </div>
             <div class="col-6">
               <ul>
-                <li>Humidity: <span id="humidity">36</span>%</li>
-                <li>Wind: <span id="wind">2</span> km/h</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
               </ul>
             </div>
           </div>
