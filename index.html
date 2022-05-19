@@ -20,6 +20,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/stylesheet.css" />
     <title>SCPlus Weather App Project</title>
   </head>
@@ -28,10 +29,10 @@
       <div class="weather-app-wrap">
         <div class="weather-app">
           <div class="overview">
-            <h1>Boston</h1>
+            <h1 id="city">Boston</h1>
             <ul>
               <li>Friday 4:50</li>
-              <li>Clear</li>
+              <li id="description">Clear</li>
             </ul>
           </div>
           <div class="row">
@@ -42,13 +43,14 @@
                   alt="Partly Cloudy"
                   class="float-left"
                 />
-                <strong> 22°C</strong> | °F</strong>
+                <strong id="temperature"> 22</strong
+                ><span id="units">°C | °F</span>
               </div>
             </div>
             <div class="col-6">
               <ul>
-                <li>Precipitation: 1%</li>
-                <li>Humidity: 36%</li>
+                <li>Humidity: <span id="humidity">36</span>%</li>
+                <li>Wind: <span id="wind">2</span> km/h</li>
               </ul>
             </div>
           </div>
