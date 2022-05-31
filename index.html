@@ -40,7 +40,11 @@
                 />
               </div>
               <div class="col-3">
-                <input type="submit" value="Go" class="btn btn-warning w-50" />
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-warning w-100"
+                />
               </div>
             </div>
           </form>
@@ -52,20 +56,16 @@
             </ul>
           </div>
           <div class="row">
-            <div class="col-6">
+            <div class="col-6 clearfix">
               <div class="weather-temperature">
                 <img src="" alt="Weather icon" id="icon" class="float-left" />
-                <strong id="temperature"></strong
-                ><span id="units">
-                  <a href="#" id="celsius-link" class="active">°C</a> |
-                  <a href="#" id="fahrenheit-link">°F</a></span
-                >
+                <strong id="temperature"></strong><span id="units">°F</span>
               </div>
             </div>
             <div class="col-6">
               <ul>
                 <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span> km/h</li>
+                <li>Wind: <span id="wind"></span> mph</li>
               </ul>
             </div>
           </div>
